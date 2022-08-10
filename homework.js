@@ -16,7 +16,7 @@ class Hamster {
     getPrice() {
         return this.price
     }
-}
+  }
 
 
 class Person {
@@ -72,8 +72,9 @@ class Person {
 
 const timmy = new Person('Timmy', 5);
 
-console.log(timmy);
+
 timmy.eat();
-console.log(timmy); 
+timmy.ageUp();
+console.log(timmy)
 
 
