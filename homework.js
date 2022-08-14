@@ -1,55 +1,57 @@
-// class Hamster {
-//     constructor(owner, name, price) {
-//         this.owner = owner;
-//         this.name = name;
-//         this.price = 15;
-//     }
+// Creat Hamster//
 
-//     wheelRun() {
-//         console.log("squeak squeak");
-//     }
+class Hamster {
+    constructor(owner, name, price) {
+        this.owner = owner;
+        this.name = name;
+        this.price = 15;
+    }
 
-//     eatFood() {
-//         console.log("nibble nibble");
-//     }
+    wheelRun() {
+        console.log("squeak squeak");
+    }
 
-//     getPrice() {
-//         console.log(`${this.price}`);
-//         return this.price;
-//     }
-//   }
+    eatFood() {
+        console.log("nibble nibble");
+    }
 
-//   const Gus = new Hamster('Timmy', "Gus");
-//   console.log(Gus.owner);
-//   console.log(Gus.name);
-//   console.log(Gus.price);
-//   Gus.getPrice();
+    getPrice() {
+        console.log(`${this.price}`);
+        return this.price;
+    }
+  }
+
+  const Gus = new Hamster('Timmy', "Gus");
+  console.log(Gus.owner);
+  console.log(Gus.name);
+  console.log(Gus.price);
+  Gus.getPrice();
+
+// Create Person//
+class Person{
+    constructor(name, age, height, weight, mood, hamsters, bankAccount) {
+        this.name = name;
+        this.age = 0;
+        this.height = 0;
+        this.weight = 0;
+        this.mood = 0;
+        this.hamsters = [];
+        this.bankAccount = 0;
+    }
 
 
-// class Person{
-//     constructor(name, age, height, weight, mood, hamsters, bankAccount) {
-//         this.name = name;
-//         this.age = 0;
-//         this.height = 0;
-//         this.weight = 0;
-//         this.mood = 0;
-//         this.hamsters = [];
-//         this.bankAccount = 0;
-//     }
+    getName() {
+        console.log(`${this.name}`);
+        return this.name;
+    }
 
+    getAge() {
+        console.log(`${this.age}`);
+        return this.age;
+    }
+}
 
-//     getName() {
-//         console.log(`${this.name}`);
-//         return this.name;
-//     }
-
-//     getAge() {
-//         console.log(`${this.age}`);
-//         return this.age;
-//     }
-// }
-
-// //Chef Make Dinners//
+// //Chef Makes Dinner//
 
 class Dinner {
     constructor( appetizer, entree, dessert) {
